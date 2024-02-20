@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid red;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f0f0f0;
+        }
+        .column {
+            flex: 1;
+            padding: 0 15px;
+        }
+        .column h3 {
+            margin-bottom: 10px;
+        }
+        .column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .column li {
+            margin-bottom: 5px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 20%;
+            border: 1px solid red;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .main-content {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        /* Виправлення стилів для sidebar, щоб випадаючий список був під пунктом меню */
+.sidebar ul li {
+  position: relative;
+}
+
+.sidebar ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%; /* Зробити ширину випадаючого списку однаковою з шириною батьківського пункту меню */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: #f9f9f9; /* Додати фоновий колір для кращої видимості */
+}
+
+.sidebar ul li:hover ul {
+  display: block; /* Показувати випадаючий список при наведенні */
+}
+
+.sidebar ul li ul li {
+  border: none; /* Видалити рамку для внутрішніх пунктів випадаючого списку, якщо не потрібно */
+  padding: 5px 0; /* Додати падінг для пунктів випадаючого списку */
+}
+
+.sidebar ul li ul li a {
+  padding: 5px; /* Додати падінг для посилань в випадаючому списку */
+  display: block; /* Забезпечити, щоб посилання займали весь доступний простір */
+  white-space: nowrap; /* Запобігати переносу тексту посилань на новий рядок */
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  display: block; /* Забезпечити, щоб посилання займали весь доступний простір */
+}
+
+.sidebar ul li a:hover {
+  color: red; /* Змінити колір посилань при наведенні */
+}
+
+    </style>
+</head>
+<body>
+<div class="header">header</div>
+<div class="content">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li>
+                <a href="#">Успішність</a>
+                <!-- Випадаючий список -->
+                <ul>
+                    <li><a href="#">Результати</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Контакти</a>
+                <!-- Випадаючий список -->
+                <ul>
+                    <li><a href="#">Звʼяжіться з нами</a></li>
+                    <li><a href="#">example@gmail.com</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">FAQ</a>
+                <!-- Випадаючий список -->
+                <ul>
+                    <li><a href="#">Загальні питання</a></li>
+                    <li><a href="#">Технічна підтримка</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">content</div>
+</div>
+<div class="footer">
+    <div class="column">
+        <h3>Структура</h3>
+        <ul>
+            <li>Ректорат</li>
+            <li>Вчена рада</li>
+            <li>Департаменти</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h3>Можливості освіти</h3>
+        <ul>
+            <li>Дистанційна освіта</li>
+            <li>Академічна стабільність</li>
+            <li>Перепідготовка</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h3>Для користувачів</h3>
+        <ul>
+            <li>Школяру</li>
+            <li>Вступнику</li>
+            <li>Першокурснику</li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+</html>
