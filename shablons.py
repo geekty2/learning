@@ -29,17 +29,10 @@ DATA_COURCES = {  # день великих нарядів
     "25.02": "MK"
 }
 
-
-# def main_algoritm():
-#     # cursor.execute(scheme["get_kursant_boy"])
-#     # m = cursor.fetchall()
-#     for course in DATA_COURCES.items():
-#         if course[1] == "C1":
-#             for position in big_naryad.items():
-#                 for i in range(position[1][0]):
-#                     cursor.execute(scheme[position[1][1]])
-#                     temp = cursor.fetchone()
-#                     slow[position[0]] = temp
-#     for i in slow.items():
-#         print(i)
-# main_algoritm()
+ENTER_BD = {
+    "ЧК": "UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = {pib};",
+    "ДК": "UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = {pib};",
+    "ДЖГ": "UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = {pib};",
+    "ЧНК": "UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = {pib};",
+    "ПЧНК": "UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = {pib};"
+}
