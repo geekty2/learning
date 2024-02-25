@@ -9,11 +9,13 @@ result = {}
 start_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day - datetime.now().weekday())
 end_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 6 - datetime.now().weekday())
 
+
 def date_iterator(start_date, end_date):
     current_date = start_date
     while current_date <= end_date:
         yield current_date.strftime("%d.%m")
         current_date += timedelta(days=1)
+
 
 def assign_naryad(date, data_sources, big_naryad, small_naryad, scheme):
     naryad_set = big_naryad if data_sources[date] == "C1" else small_naryad
@@ -90,11 +92,10 @@ def do_duty_of_7days(result, DATA_COURCES):
     else:
         print("[SHABLONS] update data")
 
-
     for date in date_iterator(start_date, end_date):
         print(date)
         assign_naryad(date, DATA_COURCES, big_naryad, small_naryad, scheme)
-        print(result, result)
+        print(result)
         write_bd(result, ENTER_BD)
     return *temp_time, weekday, start_day
 
