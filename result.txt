@@ -1,39 +1,138 @@
-{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ЧК': ('Геращенко Т. М.',)}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ПЧНК': ('Виндюк В. П.', 'Горбатько М. В.', 'Горбатюк Д. І.'),
- 'Ст.ЧП': ('Каменев М. С.',),
- 'ЧК': ('Геращенко Т. М.',),
- 'ЧНК': ('Гурський М. М.',),
- 'ЧП': ('Кісельов Д. В.',
-        'Медуниця П. Ю.',
-        'Печенюк Д. І.',
-        'Поліщук Ю. І.',
-        'Прохніцький В. І.',
-        'Процюк В. А.',
-        'Рижкін Я. К.',
-        'Семенов В. Ю.',
-        'Солончук Н. Р.')}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ЧК': ('Геращенко Т. М.',)}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ЧК': ('Геращенко Т. М.',)}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ПЧНК': ('Виндюк В. П.', 'Горбатько М. В.', 'Горбатюк Д. І.'),
- 'Ст.ЧП': ('Каменев М. С.',),
- 'ЧК': ('Геращенко Т. М.',),
- 'ЧНК': ('Гурський М. М.',),
- 'ЧП': ('Кісельов Д. В.',
-        'Медуниця П. Ю.',
-        'Печенюк Д. І.',
-        'Поліщук Ю. І.',
-        'Прохніцький В. І.',
-        'Процюк В. А.',
-        'Рижкін Я. К.',
-        'Семенов В. Ю.',
-        'Солончук Н. Р.')}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ЧК': ('Геращенко Т. М.',)}{'ДЖГ': ('Зозулюк М. О.',),
- 'ДК': ('Безнос О. С.', 'Буряк К. С.'),
- 'ЧК': ('Геращенко Т. М.',)}
+/Users/maksimbusko/Desktop/learning/.venv/bin/python /Users/maksimbusko/Desktop/learning/main.py 
+C0
+19.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Геращенко Т. М.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Безнос О. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Буряк К. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Зозулюк М. О.';
+[CONNECTION] Connection closed
+20.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Гурський М. М.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Виндюк В. П.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Горбатько М. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Мишеніна А. І.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кудленок А. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Горбатюк Д. І.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Каменев М. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кісельов Д. В.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+21.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Шевченко В. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Шпорт О. І.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Щербатюк М. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Чугай Є. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кудленок А. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Горбатюк Д. І.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Каменев М. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кісельов Д. В.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+22.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Бакай Р. Р.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Андрощук Є. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Братко Д. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Юзвенко Є. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кудленок А. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Горбатюк Д. І.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Каменев М. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Кісельов Д. В.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+23.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Бойчук О. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Дергаусов О. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Дергачов С. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Йосипчук О. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Крутько Д. М.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Заставнюк В. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Здунюк К. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Зубков І. О.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+24.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Гапоненко Є. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Данканич Д. Р.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Козубенко О. С.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Мороз І. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Крутько Д. М.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Заставнюк В. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Здунюк К. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Зубков І. О.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+25.02
+[CONNECTION] Success
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Гашинський В. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Максименко К. Р.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Мірошніченко М. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = 'Сивенко Є. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Крутько Д. М.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Заставнюк В. В.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Здунюк К. О.';
+[SQl] Executing SQL query: UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = 'Зубков І. О.';
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[SQl] Executing SQL query: SELECT VERSION();
+[CONNECTION] Connection closed
+(25, 2, 2024, 6, 19)
+
+Process finished with exit code 0
