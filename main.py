@@ -2,15 +2,23 @@ import pymysql
 from setup import host, port, user, password, database
 from shablons import scheme, big_naryad, small_naryad, DATA_COURCES, ENTER_BD
 from datetime import datetime, timedelta
-from time import time, sleep
 
 assigned = []
 result = {}
 
+start_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day - datetime.now().weekday())
+end_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 6 - datetime.now().weekday())
+
+def date_iterator(start_date, end_date):
+    current_date = start_date
+    while current_date <= end_date:
+        yield current_date.strftime("%d.%m")
+        current_date += timedelta(days=1)
 
 def assign_naryad(date, data_sources, big_naryad, small_naryad, scheme):
     naryad_set = big_naryad if data_sources[date] == "C1" else small_naryad
     print(naryad_set)
+
     try:
         connection = pymysql.connect(
             host=host,
@@ -68,24 +76,7 @@ def write_bd(data, sql_templates):
         if connection:
             connection.close()
             print("[CONNECTION] Connection closed")
-
-
-# print(assign_naryad("19.02", DATA_COURCES, big_naryad, small_naryad, scheme))
-# print(assigned)
-# print(write_bd(result, ENTER_BD))
-# print(assign_naryad("20.02", DATA_COURCES, big_naryad, small_naryad, scheme))
-# print(assigned)
-# print(write_bd(result, ENTER_BD))
-
-
-start_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day - datetime.now().weekday())
-end_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 6 - datetime.now().weekday())
-
-def date_iterator(start_date, end_date):
-    current_date = start_date
-    while current_date <= end_date:
-        yield current_date.strftime("%d.%m")
-        current_date += timedelta(days=1)
+    result.clear()
 
 
 def do_duty_of_7days(result, DATA_COURCES):
@@ -99,12 +90,11 @@ def do_duty_of_7days(result, DATA_COURCES):
     else:
         print("[SHABLONS] update data")
 
-    # for _ in range(7):
 
     for date in date_iterator(start_date, end_date):
         print(date)
         assign_naryad(date, DATA_COURCES, big_naryad, small_naryad, scheme)
-        print(result)
+        print(result, result)
         write_bd(result, ENTER_BD)
     return *temp_time, weekday, start_day
 

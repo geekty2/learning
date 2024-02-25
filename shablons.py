@@ -35,7 +35,6 @@ ENTER_BD = {
     "ДЖГ": "UPDATE newschema2.kurs SET `kurs` = `kurs` + 1 WHERE `pib` = {pib};",
     "ЧНК": "UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = {pib};",
     "ПЧНК": "UPDATE newschema2.kurs SET `nk` = `nk` + 1 WHERE `pib` = {pib};",
-
-    "Ст.ЧП": "SELECT VERSION();",  # "UPDATE newschema.kurs SET `nk` = `nk` + 1 WHERE `pib` = '{pib}';",
-    "ЧП": "SELECT VERSION();"  # "UPDATE newschema.kurs SET `nk` = `nk` + 1 WHERE `pib` = '{pib}';"
+    "Ст.ЧП": "UPDATE newschema2.kurs SET `chepe` = `chepe` + 1 WHERE `pib` = {pib};",
+    "ЧП": "UPDATE newschema2.kurs SET `chepe` = `chepe` + 1 WHERE `pib` = {pib};"
 }
