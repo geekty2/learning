@@ -6,8 +6,13 @@ from datetime import datetime, timedelta
 assigned = []
 result = {}
 
+current_date = datetime.now()
 start_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day - datetime.now().weekday())
-end_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 6 - datetime.now().weekday())
+try:
+    end_date = datetime(datetime.now().year, datetime.now().month, datetime.now().day + 6 - datetime.now().weekday())
+except ValueError as VAL:
+    days_until_next_week = 6 - current_date.weekday()
+    end_date = current_date + timedelta(days=days_until_next_week)
 
 
 def date_iterator(start_date, end_date):
